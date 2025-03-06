@@ -11,7 +11,7 @@ class ColorRepository {
             try {
                 api.getColorInfo(hex)
             } catch (e: Exception) {
-                null // Manejo de errores, evitar que la app crashee
+                null
             }
         }
     }

@@ -15,8 +15,11 @@ class ColorViewModel : ViewModel() {
     var isLoading by mutableStateOf(false)
         private set
 
-    private val hexList = listOf("0047AB", "FF5733", "4CAF50", "FFC107", "9C27B0")
-
+    private val hexList = listOf(
+        "0047AB", "FF5733", "4CAF50", "FFC107", "9C27B0",
+        "E91E63", "3F51B5", "00BCD4", "8BC34A", "FFEB3B",
+        "795548", "607D8B", "F44336", "9E9E9E", "673AB7"
+    )
     fun fetchColors() {
         viewModelScope.launch {
             isLoading = true
